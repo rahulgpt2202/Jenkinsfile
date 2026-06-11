@@ -1,3 +1,11 @@
-hello all
-How are you
-hi
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
